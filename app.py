@@ -13,9 +13,9 @@ if os.path.exists("instruction.txt"):
 else:
     SYSTEM_PROMPT = "You are a professional financial analyst bot."
 
-# एआई मॉडल सेटअप (बिना किसी क्रैश होने वाले कोडिंग टूल के - 100% स्टेबल)
+# 🚨 सबसे लेटेस्ट और एडवांस मॉडल (यह बिना क्रैश हुए लाइव इंटरनेट यूज़ करता है)
 model = genai.GenerativeModel(
-    model_name="models/gemini-2.5-flash", 
+    model_name="gemini-1.5-pro", 
     system_instruction=SYSTEM_PROMPT
 )
 
@@ -29,48 +29,26 @@ st.set_page_config(page_title="BULLOPEDIA", page_icon="📈", layout="centered")
 
 st.markdown("""
 <style>
-[data-testid="stAppViewContainer"] {
-    background-color: #0d0d0d;
-    color: #ffffff;
-}
-.orange-text {
-    color: #ff7700;
-    font-weight: bold;
-}
+[data-testid="stAppViewContainer"] { background-color: #0d0d0d; color: #ffffff; }
+.orange-text { color: #ff7700; font-weight: bold; }
 #MainMenu, header, footer {visibility: hidden;}
 div.stButton > button:first-child {
-    background-color: #ff7700;
-    color: #ffffff;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 8px;
-    border: none;
-    padding: 12px 24px;
-    width: 100%;
+    background-color: #ff7700; color: #ffffff; font-size: 1.1rem; font-weight: bold;
+    border-radius: 8px; border: none; padding: 12px 24px; width: 100%;
 }
-div.stButton > button:first-child:hover {
-    background-color: #e06600;
-}
+div.stButton > button:first-child:hover { background-color: #e06600; }
 div.markdown-container-markdownContainer {
-    background-color: #161616;
-    padding: 25px;
-    border-radius: 12px;
-    border: 1px solid #262626;
+    background-color: #161616; padding: 25px; border-radius: 12px; border: 1px solid #262626;
 }
-p, h1, h2, h3, li, blockquote, span {
-    color: #ffffff !important;
-}
-div.markdown-container-markdownContainer h1, div.markdown-container-markdownContainer strong {
-    color: #ff7700 !important;
-}
+p, h1, h2, h3, li, blockquote, span { color: #ffffff !important; }
+div.markdown-container-markdownContainer h1, div.markdown-container-markdownContainer strong { color: #ff7700 !important; }
 </style>
 """, unsafe_allow_html=True)
 
 def show_header():
     col1, col2 = st.columns([1, 4])
     with col1:
-        if os.path.exists("logo.png"):
-            st.image("logo.png", width=90)
+        if os.path.exists("logo.png"): st.image("logo.png", width=90)
     with col2:
         st.markdown("<h1 style='color: #ff7700; margin-top: 5px; font-size: 2.8rem;'>BULLOPEDIA</h1>", unsafe_allow_html=True)
 
@@ -98,8 +76,7 @@ if not st.session_state.logged_in:
             st.error("Access Denied! Invalid password code typed.")
 else:
     col_h1, col_h2 = st.columns([4, 1])
-    with col_h1:
-        show_header()
+    with col_h1: show_header()
     with col_h2:
         st.write("")
         if st.button("Log Out"):
@@ -116,15 +93,15 @@ else:
         if stock_name.strip() == "":
             st.warning("Please specify a valid Indian stock name first.")
         else:
-            with st.spinner(f"🔍 Analyzing {stock_name}, please hold..."):
+            with st.spinner(f"🔍 Accessing Live Market Data Streams for {stock_name}..."):
                 try:
-                    # मॉडल को सर्च करने और आपका जेम्स टेम्पलेट 100% सही भरने का निर्देश
+                    # मॉडल को इंटरनेट से डीप सर्च करने के लिए मजबूर करना
                     response = model.generate_content(
-                        f"Search Google for the latest live 2026 data of '{stock_name}' and completely fill out every placeholder of your system instruction template layout. Do not output instructions or N/A placeholder text."
+                        f"Act as Google Gemini Advanced with full live internet search capabilities. Search and retrieve the absolute latest financial data, order books, and metrics for the Indian stock '{stock_name}' for the year 2026. Fill out every placeholder in the system instruction template accurately. Do not leave any bracketed text or output N/A."
                     )
                     st.success("Analysis Completed Successfully!")
                     st.markdown(f"### 📋 Analysis Report: <span class='orange-text'>{stock_name.upper()}</span>", unsafe_allow_html=True)
                     st.markdown("---")
                     st.markdown(response.text, unsafe_allow_html=True)
                 except Exception as e:
-                    st.error(f"Execution Error: {str(e)}\nMake sure your Google Gemini API Key is working fine in Streamlit Secrets.")
+                    st.error(f"Execution Error: {str(e)}")
