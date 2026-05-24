@@ -1,0 +1,48 @@
+**🐂 [STOCK NAME]**
+*   ➡️ **Bullopedia Score:** 🔥 **[X.X]/10**
+*   ➡️ **Piotroski Score:** 📊 **[X/9] (Financial Health Check)**
+
+---
+
+🚀 **1. BUSINESS OVERVIEW:**
+> **Company Profile:** [Company क्या करता है और कोर रेवेन्यू सोर्स - max 2 lines]
+
+📊 **2. MARKET CAP CATEGORY:**
+*   ➡️ **Category:** 💎 **[Large / Mid / Small Cap]** 
+*   ➡️ **Market Cap:** 💰 **₹ [X] Cr**
+
+💼 **3. ORDER BOOK & KEY TRIGGERS:**
+*   ➡️ **Total Order Book:** 📦 **₹ [X] Crore** (Write N/A if not applicable)
+*   ➡️ **Recent Wins / Catalyst:** ⚡ **[Major recent orders या स्टॉक को भगाने वाला कोई बड़ा ट्रिगर]**
+
+📈 **4. KEY METRICS & FINANCIAL HEALTH:**
+*   ➡️ **Current Price:** 💵 **₹ [X]** 
+*   ➡️ **P/E Ratio:** 🔍 **[X]** (Industry P/E: **[Y]**)
+*   ➡️ **Debt to Equity:** ⚖️ **[X]** 
+*   ➡️ **Promoter Holding:** 🤝 **[X]%** (Pledged: **[Y]%**)
+*   ➡️ **3-Yr Growth Trend:** 🩺 **Sales CAGR: [X]% | PAT CAGR: [Y]%**
+
+🏦 **5. INSTITUTIONAL FLOW (FII + DII):**
+*   ➡️ **FII Holding:** 🏦 **[X]%** — ₹ **[X]** Cr (1Q Change: **⬆️ +Y% / ⬇️ -Y% / Stable**)
+*   ➡️ **DII Holding:** 🏛️ **[X]%** — ₹ **[X]** Cr (1Q Change: **⬆️ +Y% / ⬇️ -Y% / Stable**)
+
+📦 **6. VOLUME & DELIVERY TREND:**
+*   ➡️ **Delivery Percentage:** 📊 **Last Day: [X]% | 1-W Avg: [X]% | 1-M Avg: [X]%**
+*   ➡️ **Volume & Price Action:** 📈 **[Vol: X-Times Avg / Normal] • [Price Tightness / Breakout]**
+*   ➡️ **Overall Trend:** 🎯 **[Strong Accumulation 🔥 / Neutral / Strong Distribution 🔴]** (1 short reason)
+
+🎯 **7. SECTOR PLAY & ROTATION:**
+*   ➡️ **Index & Niche:** 🏢 **[Sector Index]** | 🔮 **Theme: [EV, Defence, Railway, etc.]**
+*   ➡️ **Rotation & RS:** ⚙️ **[Rotation Phase]** • 💪 **[Strong / Moderate / Weak] vs Nifty**
+
+📉 **8. SECTOR TECHNICAL INDICATORS (RSI):**
+*   ➡️ **Sector RSI:** 📊 **Monthly: [Value] | Daily: [Value]**
+*   ➡️ **🚨 MOMENTUM ALERT:** **[Monthly RSI crosses 60 from below? FLASH: "🔥 Sector entering Super-Bullish zone!" Else "None"]**
+
+🦅 **9. BULLOPEDIA TAKEAWAY:**
+*   🟢 **Pros / Triggers:** **[1-2 strongest points/triggers]**
+*   🔴 **Cons / Risks:** **[1 main risk या key resistance level]**
+*   ⚡ **Final Verdict:** 👑 **[Strong Bullish / Bullish / Neutral / Cautious]**
+
+---
+Strict Rule: Do not include any hyperlinks, URL sources, or website names in the output. Keep it 100% clean.
